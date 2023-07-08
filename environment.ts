@@ -1,7 +1,11 @@
 import invariant from 'ts-invariant'
 import {
+  bsc,
+  bscTestnet,
+  goerli as ethereumGoerli,
   mainnet as ethereumMainnet,
   polygon,
+  polygonMumbai,
 } from 'wagmi/chains'
 
 invariant(process.env.NEXT_PUBLIC_BASE_URL, 'Base url is not defined')
@@ -41,13 +45,31 @@ const environment = {
    */
 
   // Ordered list of tokens to be highlighted on the homepage with the following format: [chainId]-[contractAddress]-[tokenId]
-  FEATURED_TOKEN: [],
+  FEATURED_TOKEN: [
+    '80001-0x7c68c3c59ceb245733a2fdeb47f5f7d6dbcc65b3-42728329798185476104569684045014434977602555793693139688081182813192562446854',
+    '80001-0x7c68c3c59ceb245733a2fdeb47f5f7d6dbcc65b3-42728329798185476104569684045014434977602555793693139688045754842099928417655',
+    '80001-0x7c68c3c59ceb245733a2fdeb47f5f7d6dbcc65b3-42728329798185476104569684045014434977602555793693139688029603075124255299633',
+    '80001-0x7c68c3c59ceb245733a2fdeb47f5f7d6dbcc65b3-42728329798185476104569684045014434977602555793693139688022518523903183557889',
+  ],
 
   // Ordered list of collections to be featured on the homepage with the following format: [chainId]-[contractAddress]
-  HOME_COLLECTIONS: [],
+  HOME_COLLECTIONS: [
+    '1-0x3b3ee1931dc30c1957379fac9aba94d1c48a5405',
+    '1-0xe12edaab53023c75473a5a011bdb729ee73545e8',
+    '1-0x762bc5880f128dcac29cffdde1cf7ddf4cfc39ee',
+    '97-0xcfbb45ff528c8ff6542887f631a1f704b92cf7db',
+  ],
 
   // Ordered list of users to be featured on the homepage with the following format: [address]
-  HOME_USERS: [],
+  HOME_USERS: [
+    '0x4b595014f7b45789c3f4e79324ae6d8090a6c8b5',
+    '0x8108457554bc5822dc55b8adaa421ffeb970e09d',
+    '0x5e7760acf5d659278747b95da2ab2b5ea7171615',
+    '0x8533f3ffe30c9cf449cc112850e7ec815070509d',
+    '0xd68a4b996d84b122a7b39a7d8dc6b354789b1f5c',
+    '0x3625af2cfbf95a8d5b82b7b73a65213f845568e3',
+    '0x49027ef8931082ca59f0037b80a4f518d500bc4f',
+  ],
 
   // List of tokens randomized to be featured on the homepage with the following format: [chainId]-[contractAddress]-[tokenId]
   // If empty, the tokens will be the last created ones
@@ -60,7 +82,11 @@ const environment = {
   // List of supported chains. Liteflow is supporting the following: ethereumMainnet, ethereumGoerli, bscTestnet, bsc, polygon, polygonMumbai
   CHAINS: [
     ethereumMainnet,
-    polygon
+    ethereumGoerli,
+    bscTestnet,
+    bsc,
+    polygon,
+    polygonMumbai,
   ],
 
   // (Optional) Wallet connect project ID, you can get one at https://cloud.walletconnect.com/
@@ -74,16 +100,16 @@ const environment = {
    */
 
   // Name of the company to place in the SEO title and in the footer
-  META_COMPANY_NAME: 'Just Another',
+  META_COMPANY_NAME: 'Acme, Inc.',
 
   // Title of the marketplace to place in the SEO title
-  META_TITLE: 'Just Another Digital Art Marketplace',
+  META_TITLE: 'Acme NFT Marketplace',
 
   // Description of the marketplace to place in the SEO description
-  META_DESCRIPTION: 'Just Another Digital Art Marketplace',
+  META_DESCRIPTION: 'Acme NFT Marketplace',
 
   // Keywords of the marketplace to place in the SEO keywords
-  META_KEYWORDS: 'NFT, Digital Art, Digital Collectibles, NFT marketplace, platform, blockchain, liteflow',
+  META_KEYWORDS: 'NFT, marketplace, platform, blockchain, liteflow',
 }
 
 export default environment
