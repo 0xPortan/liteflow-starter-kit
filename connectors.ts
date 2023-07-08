@@ -5,7 +5,6 @@ import {
   WalletList,
 } from '@rainbow-me/rainbowkit'
 import {
-  braveWallet,
   coinbaseWallet,
   injectedWallet,
   metaMaskWallet,
