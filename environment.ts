@@ -103,10 +103,10 @@ const environment = {
   META_COMPANY_NAME: 'Just Another',
 
   // Title of the marketplace to place in the SEO title
-  META_TITLE: 'Acme NFT Marketplace',
+  META_TITLE: 'Just Another',
 
   // Description of the marketplace to place in the SEO description
-  META_DESCRIPTION: 'Acme NFT Marketplace',
+  META_DESCRIPTION: 'Just Another Digital Art Marketplace',
 
   // Keywords of the marketplace to place in the SEO keywords
   META_KEYWORDS: 'NFT, marketplace, platform, blockchain, liteflow',
