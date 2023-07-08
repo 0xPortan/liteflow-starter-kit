@@ -100,7 +100,7 @@ const environment = {
    */
 
   // Name of the company to place in the SEO title and in the footer
-  META_COMPANY_NAME: 'Acme, Inc.',
+  META_COMPANY_NAME: 'Just Another',
 
   // Title of the marketplace to place in the SEO title
   META_TITLE: 'Acme NFT Marketplace',
