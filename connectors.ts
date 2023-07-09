@@ -51,7 +51,7 @@ const getDefaultWallets = ({
         coinbaseWallet({ appName, chains }),
         metaMaskWallet({ chains, shimDisconnect }),
         //environment.WALLET_CONNECT_PROJECT_ID
-          //? walletConnectWallet({ chains })
+        //? walletConnectWallet({ chains })
         //  : undefined,
         braveWallet({ chains, shimDisconnect }),
         environment.MAGIC_API_KEY
