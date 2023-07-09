@@ -10,7 +10,7 @@ import {
   injectedWallet,
   metaMaskWallet,
   rainbowWallet,
-  walletConnectWallet,
+  //walletConnectWallet,
 } from '@rainbow-me/rainbowkit/wallets'
 import { Chain, configureChains, Connector, createClient } from 'wagmi'
 import {
