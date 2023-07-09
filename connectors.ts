@@ -10,7 +10,7 @@ import {
   injectedWallet,
   metaMaskWallet,
   rainbowWallet,
-  //walletConnectWallet,
+  walletConnectWallet,
 } from '@rainbow-me/rainbowkit/wallets'
 import { Chain, configureChains, Connector, createClient } from 'wagmi'
 import {
@@ -50,9 +50,9 @@ const getDefaultWallets = ({
         rainbowWallet({ chains, shimDisconnect }),
         coinbaseWallet({ appName, chains }),
         metaMaskWallet({ chains, shimDisconnect }),
-        //environment.WALLET_CONNECT_PROJECT_ID
-        //? walletConnectWallet({ chains })
-        //  : undefined,
+        environment.WALLET_CONNECT_PROJECT_ID
+          ? walletConnectWallet({ chains })
+          : undefined,
         braveWallet({ chains, shimDisconnect }),
         environment.MAGIC_API_KEY
           ? emailConnector({ chains, apiKey: environment.MAGIC_API_KEY })
