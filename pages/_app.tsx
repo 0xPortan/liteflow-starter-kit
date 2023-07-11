@@ -89,8 +89,8 @@ function Layout({ children }: PropsWithChildren<{}>) {
       { href: '/support.here', label: texts[locale].support },
       { href: '/terms.here', label: texts[locale].terms },
       { href: '/privary.here', label: texts[locale].privacy },
-      { href: 'https://twitter.com/autominter', label: 'Twitter' },
-      { href: 'https://discord.gg/autominter', label: 'Discord' },
+  //    { href: 'https://twitter.com/autominter', label: 'Twitter' },
+  //    { href: 'https://discord.gg/autominter', label: 'Discord' },
     ].filter(Boolean)
   }, [router.locale, userProfileLink])
 
