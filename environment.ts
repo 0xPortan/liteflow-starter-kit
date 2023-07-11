@@ -20,7 +20,7 @@ const environment = {
   LITEFLOW_API_KEY: process.env.NEXT_PUBLIC_LITEFLOW_API_KEY,
 
   // Email address for end users to send reports to
-  REPORT_EMAIL: `contact@domain.tld`,
+  REPORT_EMAIL: `hello@justanother.com.au`,
 
   // Number of items per page
   PAGINATION_LIMIT: 12,
@@ -35,7 +35,7 @@ const environment = {
   BASE_URL: process.env.NEXT_PUBLIC_BASE_URL,
 
   // Maximum percentage of royalties
-  MAX_ROYALTIES: 30,
+  MAX_ROYALTIES: 10,
 
   // (Optional) Bugsnag API Key, you can get one at https://www.bugsnag.com/
   BUGSNAG_API_KEY: process.env.NEXT_PUBLIC_BUGSNAG_API_KEY,
@@ -82,11 +82,11 @@ const environment = {
   // List of supported chains. Liteflow is supporting the following: ethereumMainnet, ethereumGoerli, bscTestnet, bsc, polygon, polygonMumbai
   CHAINS: [
     ethereumMainnet,
-    ethereumGoerli,
-    bscTestnet,
-    bsc,
-    polygon,
-    polygonMumbai,
+    //ethereumGoerli,
+  //  bscTestnet,
+    //bsc,
+    //polygon,
+  //  polygonMumbai,
   ],
 
   // (Optional) Wallet connect project ID, you can get one at https://cloud.walletconnect.com/
