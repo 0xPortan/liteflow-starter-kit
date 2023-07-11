@@ -435,6 +435,7 @@ const Navbar: VFC<{
           {account ? (
             <HStack spacing={2}>
               <ActivityMenu account={account.address} />
+/*
               <Link href="/chat">
                 <IconButton
                   aria-label="Notifications"
@@ -446,6 +447,7 @@ const Navbar: VFC<{
                   }
                 />
               </Link>
+*/
               <Link href="/notification">
                 <IconButton
                   aria-label="Notifications"
