@@ -85,7 +85,7 @@ const Footer: VFC<Props> = ({ name, links }) => {
                 fontWeight="500"
                 mr={1}
               >
-                Powered by
+                Powered by AutoMinter and 
               </Text>
               <Link href="https://liteflow.com" isExternal>
                 {LiteflowLogo}
